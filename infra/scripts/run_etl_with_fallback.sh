@@ -5,7 +5,7 @@ REPO_URL="${REPO_URL:?REPO_URL no definido}"
 BRANCH="${BRANCH:-main}"
 LOCAL_REPO="${LOCAL_REPO:-/opt/etl-repo}"
 
-LOG_DIR="/var/log/etl-ares"
+LOG_DIR="./etl-ares-logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/etl-ares.log"
 
