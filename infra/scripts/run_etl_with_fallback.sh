@@ -6,7 +6,9 @@ BRANCH="${BRANCH:-main}"
 LOCAL_REPO="${LOCAL_REPO:-./etl-repo}"
 
 LOG_DIR="./etl-ares-logs"
-mkdir -p "$LOG_DIR"
+if [ ! -d "$LOG_DIR" ]; then
+  mkdir -p "$LOG_DIR"
+fi
 LOG_FILE="$LOG_DIR/etl-ares.log"
 
 echo "=== $(date '+%Y-%m-%d %H:%M:%S') - INICIO ETL ARES ===" | tee -a "$LOG_FILE"
