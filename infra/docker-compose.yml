@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  jenkins:
+    build:
+      context: ./jenkins
+    container_name: etl-jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    environment:
+      - REPO_URL=https://github.com/valdepeace/test-etl.git
+      - BRANCH=main
+      - LOCAL_REPO=/opt/etl-repo
+    volumes:
+      - jenkins_home:/var/jenkins_home
+      - etl_repo:/opt/etl-repo
+      # Opcional: montar tu repo local por comodidad
+      - ..:/workspace
+volumes:
+  jenkins_home:
+  etl_repo:
