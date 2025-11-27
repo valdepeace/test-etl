@@ -3,9 +3,9 @@ set -euo pipefail
 
 REPO_URL="${REPO_URL:?REPO_URL no definido}"
 BRANCH="${BRANCH:-main}"
-LOCAL_REPO="${LOCAL_REPO:-/opt/etl-repo}"
+LOCAL_REPO="${LOCAL_REPO:-./etl-repo}"
 
-LOG_DIR="./etl-repo"
+LOG_DIR="./etl-ares-logs"
 mkdir -p "$LOG_DIR"
 LOG_FILE="$LOG_DIR/etl-ares.log"
 
@@ -20,6 +20,9 @@ if git ls-remote "$REPO_URL" -q > /dev/null 2>&1; then
   echo "✔ Repositorio accesible. Actualizando..." | tee -a "$LOG_FILE"
 
   if [ ! -d "$LOCAL_REPO/.git" ]; then
+    if [ -d "$LOCAL_REPO" ]; then
+      rm -rf "$LOCAL_REPO"
+    fi
     echo "➡ Clonando repo en $LOCAL_REPO" | tee -a "$LOG_FILE"
     git clone "$REPO_URL" "$LOCAL_REPO"
   fi

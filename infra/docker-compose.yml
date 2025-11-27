@@ -11,7 +11,7 @@ services:
     environment:
       - REPO_URL=https://github.com/valdepeace/test-etl.git
       - BRANCH=main
-      - LOCAL_REPO=/opt/etl-repo
+      - LOCAL_REPO=./etl-repo
     volumes:
       - jenkins_home:/var/jenkins_home
       - etl_repo:/opt/etl-repo
