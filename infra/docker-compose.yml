@@ -16,7 +16,7 @@ services:
       - jenkins_home:/var/jenkins_home
       - etl_repo:/opt/etl-repo
       # Opcional: montar tu repo local por comodidad
-      - ..:/workspace
+      - /mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/etl-repo:/workspace/etl-repo
 volumes:
   jenkins_home:
   etl_repo:

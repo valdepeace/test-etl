@@ -3,7 +3,7 @@ set -euo pipefail
 
 REPO_URL="${REPO_URL:?REPO_URL no definido}"
 BRANCH="${BRANCH:-main}"
-LOCAL_REPO="${LOCAL_REPO:-./etl-repo}"
+LOCAL_REPO="${LOCAL_REPO:-/workspace/etl-repo}"
 
 LOG_DIR="./etl-ares-logs"
 echo "Creando directorio de logs en $LOG_DIR"
@@ -60,7 +60,7 @@ echo "ℹ Escenario ejecutado: $SCENARIO" | tee -a "$LOG_FILE"
 mkdir -p "$LOG_DIR"
 echo "🚀 Ejecutando ETL..." | tee -a "$LOG_FILE"
 mkdir -p "$LOG_DIR"
-python3 run_etl.py "$@" | tee -a "$LOG_FILE"
+python3 "$LOCAL_REPO/run_etl.py" "$@" | tee -a "$LOG_FILE"
 EXIT_CODE=${PIPESTATUS[0]}
 
 mkdir -p "$LOG_DIR"
