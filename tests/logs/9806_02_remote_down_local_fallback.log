@@ -1,0 +1,8 @@
+--- Escenario: 02_remote_down_local_fallback ---
+PWD: /mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/etl-repo
+PYTHONPATH: <none>
+Import fallback: ejecutando run_etl.py
+🏁 Iniciando ETL Ares (PoC)...
+📦 Procesando datos...
+✅ ETL Ares finalizado correctamente.
+--- Fin escenario: 02_remote_down_local_fallback ---

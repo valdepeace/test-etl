@@ -1,0 +1,32 @@
+---- Ejecutando escenario: REPO_URL=https://invalid.example.invalid/repo.git LOCAL_REPO=/mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/etl-repo/tests/tmp/local_nested_repo
+Intento 1/3 fallido. Esperando 2s...
+Intento 2/3 fallido. Esperando 2s...
+Intento 3/3 fallido. Esperando 2s...
+No hay acceso a GitHub; se usará copia local si está disponible.
+SCENARIO=REMOTE_DOWN_LOCAL_FALLBACK
+PYTHONPATH fallback: /mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/etl-repo/tests/tmp/local_nested_repo
+Contenido de PYTHONPATH:
+total 0
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:41 .
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:41 ..
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:41 etl-repo
+Ejecutando: python3 -u -m project.src.etl_ares
+/usr/bin/python3: Error while finding module specification for 'project.src.etl_ares' (ModuleNotFoundError: No module named 'project')
+El módulo devolvió código distinto de 0 (ver log).
+---- Fin escenario
+---- Ejecutando escenario: REPO_URL=https://invalid.example.invalid/repo.git LOCAL_REPO=/mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/tests/tmp/local_nested_repo
+Intento 1/3 fallido. Esperando 2s...
+Intento 2/3 fallido. Esperando 2s...
+Intento 3/3 fallido. Esperando 2s...
+No hay acceso a GitHub; se usará copia local si está disponible.
+SCENARIO=REMOTE_DOWN_LOCAL_FALLBACK
+PYTHONPATH fallback: /mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/tests/tmp/local_nested_repo
+Contenido de PYTHONPATH:
+total 0
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:51 .
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:51 ..
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:51 etl-repo
+Ejecutando: python3 -u -m project.src.etl_ares
+/usr/bin/python3: Error while finding module specification for 'project.src.etl_ares' (ModuleNotFoundError: No module named 'project')
+El módulo devolvió código distinto de 0 (ver log).
+---- Fin escenario

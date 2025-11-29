@@ -1,0 +1,40 @@
+---- Ejecutando escenario: REPO_URL=https://github.com/valdepeace/test-etl.git LOCAL_REPO=/mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/etl-repo/tests/tmp/local_with_changes
+Conexión a GitHub OK. Intentando actualizar código...
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Cambios locales detectados. Forzando reset a origin/main
+HEAD is now at a172bad Mejorar detección PYTHONPATH; añadir tests automatizados de escenarios
+SCENARIO=REMOTE_OK_UPDATED
+PYTHONPATH detectado y exportado: /mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/etl-repo/tests/tmp/local_with_changes/etl-repo
+Contenido de PYTHONPATH:
+total 0
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:41 .
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:41 ..
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:41 project
+-rwxrwxrwx 1 valdepeace valdepeace  222 Nov 29 08:41 run_etl.py
+Ejecutando: python3 -u -m project.src.etl_ares
+🏁 Iniciando ETL Ares (module) - project.src.etl_ares
+🔎 SCENARIO env: UNKNOWN
+📦 Procesando datos...
+✅ ETL Ares finalizado correctamente.
+---- Fin escenario
+---- Ejecutando escenario: REPO_URL=https://github.com/valdepeace/test-etl.git LOCAL_REPO=/mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/tests/tmp/local_with_changes
+Conexión a GitHub OK. Intentando actualizar código...
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+Cambios locales detectados. Forzando reset a origin/main
+HEAD is now at a172bad Mejorar detección PYTHONPATH; añadir tests automatizados de escenarios
+SCENARIO=REMOTE_OK_UPDATED
+PYTHONPATH detectado y exportado: /mnt/e/workspace/trustme/sumapositiva/pfs/poc-jenkins-etl/etl/tests/tmp/local_with_changes/etl-repo
+Contenido de PYTHONPATH:
+total 0
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:50 .
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:50 ..
+drwxrwxrwx 1 valdepeace valdepeace 4096 Nov 29 08:50 project
+-rwxrwxrwx 1 valdepeace valdepeace  222 Nov 29 08:50 run_etl.py
+Ejecutando: python3 -u -m project.src.etl_ares
+🏁 Iniciando ETL Ares (module) - project.src.etl_ares
+🔎 SCENARIO env: UNKNOWN
+📦 Procesando datos...
+✅ ETL Ares finalizado correctamente.
+---- Fin escenario
